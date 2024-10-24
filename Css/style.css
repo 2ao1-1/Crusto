@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Agoesa";
+  src: url("../fonts/Agoesa.otf") format("opentype"),
+    url("../fonts/Agoesa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Momken";
+  src: url("../fonts/Momken-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aref Ruqaa Regular";
+  src: url("../fonts/ArefRuqaa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DG Enab";
+  src: url("../fonts/alfont_com_DGEnab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.card {
+  width: 225px;
+}
+.heart-btn {
+  color: #efe3bc;
+}
+.heart-btn:focus,
+.heart-btn:hover,
+.cart:focus,
+.cart:hover {
+  color: #c11f24;
+}
+h1 {
+  cursor: default;
+}
+.card-content {
+  margin-bottom: 70px;
+}
