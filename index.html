@@ -3,82 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crusto</title>
+    <title>كراستو</title>
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="Css/style.css" />
     <link rel="stylesheet" href="Css/output.css" />
-    <!-- <style>
-      .best-seller {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        width: 600px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .best-carousel {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .best-product {
-        min-width: 200px;
-        margin: 10px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        padding: 20px;
-        font-size: 18px;
-      }
-
-      .best-product img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-
-      .btns {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-      }
-
-      .btn {
-        background-color: rgba(0, 0, 0, 0.5);
-        border: none;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-        font-size: 18px;
-      }
-
-      .btn:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-    </style> -->
   </head>
-  <body class="bg-second">
+  <body class="bg-second text-gray-800">
+    <!-- Header Section -->
     <header class="bg-main text-second">
       <!-- Navbar -->
-      <nav class="container py-3 mx-auto font-momken">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
+      <nav class="mx-auto font-momken relative">
+        <div class="nav-bar">
+          <div
+            class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
+          >
             <!-- Logo -->
             <div class="flex-shrink-0">
               <a href="#" class="">
                 <img
                   src="Images/logo.svg"
                   alt="Crusto logo"
-                  class="w-16 md:w-32 h-20"
+                  class="md:w-32 h-20"
+                  width="80"
+                  height="80"
                 />
               </a>
             </div>
@@ -86,68 +33,33 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-4 items-center">
               <div class="menu flex">
-                <a href="#" class="hover:text-yellow-500 px-4 mx-4">الرئيسية</a>
-                <a href="#" class="hover:text-yellow-500 px-4 mx-4">القائمة</a>
-                <a href="#" class="hover:text-yellow-500 px-4 mx-4">عننا</a>
-                <a href="#" class="hover:text-yellow-500 px-4 mx-4">التواصل</a>
+                <a href="#" class="hover:text-yellow-500 px-4">الرئيسية</a>
+                <a href="#" class="hover:text-yellow-500 px-4">القائمة</a>
+                <a href="#" class="hover:text-yellow-500 px-4">عننا</a>
+                <a href="#" class="hover:text-yellow-500 px-4">التواصل</a>
               </div>
 
-              <!-- hot line -->
-              <div class="hidden md:flex p-5 items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill=""
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-8 rounded-full p-1 fill-second stroke-none"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                  />
-                </svg>
-                <div class="flex-col mx-3">
-                  <span
-                    >الخط الساخن<br />
-                    <a href="" class="hover:text-yellow-500">0515 96 36 36</a>
-                  </span>
+              <!-- Hotline -->
+              <div class="hidden md:flex items-center p-5 flex-row mx-3">
+                <img src="Images/icons/call.svg" alt="call icons" />
+                <div class="mx-3">
+                  <div class="flex-col">
+                    <h6>الخط الساخن</h6>
+                    <a href="#" class="hover:text-yellow-500">0515 96 36 36</a>
+                  </div>
                 </div>
               </div>
 
-              <div class="info flex items-center px-3">
-                <button href="" class="user px-3" id="sign-in-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-8 rounded-full p-1 fill-second stroke-none hover:fill-yellow-500"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                    />
-                  </svg>
+              <!-- User and Cart Icons -->
+              <div class="info flex items-center m-0">
+                <button id="sign-in-btn" class="user px-3">
+                  <img src="Images/icons/account.svg" alt="user account" />
                 </button>
-                <button href="" class="cart px-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-8 rounded-full p-1 hover:fill-yellow-500"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                    />
-                  </svg>
+                <button class="cart px-3">
+                  <img
+                    src="Images/icons/shopping-cart.svg"
+                    alt="Shopping Cart"
+                  />
                 </button>
               </div>
             </div>
@@ -158,410 +70,326 @@
                 id="mobile-menu-button"
                 class="text-second focus:outline-none"
               >
-                <svg
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  ></path>
-                </svg>
+                <img src="Images/icons/menu-square.svg" alt="menu icon" />
               </button>
             </div>
-          </div>
-        </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-          <div
-            class="px-4 pt-2 pb-3 space-y-1 sm:px-6 flex flex-col items-center"
-          >
-            <div class="menu flex flex-col">
-              <a href="#" class="hover:text-yellow-500 px-4 mx-4">الرئيسية</a>
-              <a href="#" class="hover:text-yellow-500 px-4 mx-4">القائمة</a>
-              <a href="#" class="hover:text-yellow-500 px-4 mx-4">عننا</a>
-              <a href="#" class="hover:text-yellow-500 px-4 mx-4">التواصل</a>
-            </div>
-
-            <!-- <div class="info flex items-center px-3">
-              <button href="" class="user px-3" id="sign-in-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-8 rounded-full p-1 fill-second stroke-none hover:fill-yellow-500"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                  />
-                </svg>
-              </button>
-              <button href="" class="cart px-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-8 rounded-full p-1 hover:fill-yellow-500"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-              </button>
-            </div> -->
-          </div>
-        </div>
-
-        <!-- main page -->
-        <div
-          class="main-page container mx-auto flex items-center justify-between text-lg py-20"
-        >
-          <div class="face-content text-center w-full sm:text-right sm:w-6/12">
-            <h1 class="text-9xl mb-10 leading-6 font-momken">
-              بيتزا <br />ببروني
-            </h1>
-            <p class="font-ruqaa text-base mt-5">
-              عرض خاص لمدة <strong>اسبوع</strong>
-            </p>
-            <p class="text-lg font-ruqaa mb-5">
-              اشتري 3 و احصل علي ال4 <span>مجانا</span>
-            </p>
-            <button
-              class="px-5 py-2 bg-darkgray font-ruqaa rounded-lg hover:bg-zinc-700"
+            <!-- Mobile Menu -->
+            <div
+              id="mobile-menu"
+              class="bg-main hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
             >
-              اطلب الآن
-            </button>
-          </div>
-          <div class="face-img w-0 sm:w-6/12 lg:w-6/12">
-            <img src="Images/face-img.png" alt="" class="skew-y-12" />
+              <div
+                class="px-4 pt-2 pb-3 space-y-1 flex flex-col items-center menu-transition"
+              >
+                <div class="menu flex flex-col">
+                  <a href="#" class="hover:text-yellow-500 px-4 mx-4"
+                    >الرئيسية</a
+                  >
+                  <a href="#" class="hover:text-yellow-500 px-4 mx-4"
+                    >القائمة</a
+                  >
+                  <a href="#" class="hover:text-yellow-500 px-4 mx-4">عننا</a>
+                  <a href="#" class="hover:text-yellow-500 px-4 mx-4"
+                    >التواصل</a
+                  >
+                </div>
+                <button
+                  id="close-menu"
+                  class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded"
+                >
+                  إغلاق
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Hero Section -->
+        <section class="hero-main-page text-center w-full">
+          <video
+            src="Images/main1.mp4"
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+
+          <div class="hero-content w-full z-10 relative">
+            <h2 class="text-4xl font-bold mb-4">أهلاً بكم في مطعم كراستو!</h2>
+            <p class="text-lg mb-6">
+              أفضل بيتزا على الطريقة الإيطالية بلمسة عربية
+            </p>
+            <a
+              href="#menu"
+              class="bg-main text-second px-8 py-3 relative top-20 rounded-lg hover:bg-red-700 transition"
+              >استعرض قائمتنا</a
+            >
+          </div>
+        </section>
       </nav>
     </header>
-    <!-- main pages -->
-    <main class="p-4">
-      <!-- ads screen -->
-      <div
-        class="ads container mx-auto py-16 grid sm:grid-cols-9 gap-4 font-ruqaa relative"
-      >
-        <div
-          class="ad-card flex flex-col items-center bg-ad-1 bg-accentGold text-main relative bg-cover bg-center shadow-md rounded-md sm:col-span-5 h-36 sm:h-36 md:h-48 lg:h-60 pr- sm:pr-40 md:pr-52 lg:pr-96"
-        >
-          <h3 class="py-2 md:py-4 lg:py-8 text-xl sm:text-2xl md:text-4xl">
-            اشتري واحد <br />احصل علي آخر
-          </h3>
-          <p class="font-bold text-deepGreen">وفر 30%</p>
-          <p>فقط يوم <strong>الثلاثاء</strong> من كل اسبوع</p>
-        </div>
-        <div
-          class="sm:col-span-4 sm:h-36 md:h-48 lg:h-60 relative shadow-md rounded-md bg-main text-second flex items-center justify-around"
-        >
-          <div>
-            <h3 class="text-3xl sm:text-4xl mb-3">
-              توصيل مجانا <br /><strong>اسرع <br />دليفري</strong>
-            </h3>
-            <p class="text-sm">الخط الساخن 0515963636</p>
-          </div>
-          <img src="Images/ads/dilevery.png" alt="" class="size-48" />
-        </div>
-        <div
-          class="sm:col-span-3 h-56 flex flex-col items-center p-4 text-second bg-deepGreen shadow-md rounded-md"
-        >
-          <h3 class="text-4xl">تاكو</h3>
-          <img src="Images/ads/ad3.png" alt="" />
-          <p class="relative bottom-0">اشتري 3 و ليك خصم 20%</p>
-        </div>
-        <div
-          class="sm:col-span-3 bg-white p-3 shadow-md rounded-md flex items-center h-56 flex-col justify-center relative text-darkgray text-center"
-        >
-          <h3 class="text-2xl">
-            اميركان برجر<br />
-            <strong>برجر داي</strong><br />
-            <span
-              class="text-sm absolute top-3 left-3 bg-accentGold p-2 rounded-md"
-              >50% خصم</span
-            >
-          </h3>
-          <img src="Images/ads/ad4.png" alt="" />
-        </div>
-        <div
-          class="sm:col-span-3 p-3 bg-accentGold text-darkgray shadow-md rounded-md flex items-center h-56 overflow-hidden relative"
-        >
-          <h3 class="text-5xl">فرايد<br />تشيكن</h3>
-          <img src="Images/ads/ad5.png" alt="" />
-          <!-- <p class="text-lg relative top-0">اشتري 3 و ليك خصم 20%</p> -->
-        </div>
-      </div>
-      <!-- best seller -->
-      <div
-        class="best-seller container mx-auto py-16 border-b-2 border-main border-solid overflow-hidden"
-      >
-        <h2 class="font-momken text-5xl text-main mb-6">الاكثر مبيعًا</h2>
-        <!-- <p class="font-ruqaa">بيتزا مارغريتا بصلصة الطماطم الطازجة.</p> -->
-        <div
-          class="flex items-center justify-center w-full gap-4 mt-10 overflow-hidden"
-        >
-          <button
-            id="prev-car"
-            class="bg-accentGold h-6 p-2 flex items-center py-8"
-          >
-            ❮
-          </button>
-
-          <div class="overflow-hidden w-3/4">
-            <div
-              id="best-items"
-              class="flex transition-transform duration-300 ease-in-out object-contain mb-"
-            ></div>
-          </div>
-
-          <button
-            id="next-car"
-            class="bg-accentGold h-6 p-2 flex items-center py-8"
-          >
-            ❯
-          </button>
-        </div>
-      </div>
-
+    <main>
       <!-- menu -->
-      <div
-        class="menu container mx-auto py-16 border-b-2 border-main border-solid"
-      >
-        <h2 class="font-momken text-5xl text-main mb-6">القائمة</h2>
-        <div
-          class="menu-container grid grid-cols-3 md:grid-cols-9 sm:grid-cols-6 gap-4"
-        >
-          <div
-            class="rounded-md col-span-3 md:col-span-3 row-span-8 bg-white p-3 shadow-md"
-            id="pizza"
-          >
-            <h3 class="font-momken text-main mb-4">بيتزا</h3>
+      <section id="menu" class="py-16 pb-36">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-12 text-main font-momken">
+            قائمة الطعام
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/margherita1.jpg"
+                alt="مارغريتا"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/pexels-yassir-abbas-157457256-11111603.jpg"
+                alt="بيبروني"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/pexels-olecramos-6697469.jpg"
+                alt="مارغريتا"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/margherita1.jpg"
+                alt="مارغريتا"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/margherita1.jpg"
+                alt="مارغريتا"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="Images/pizza/margherita1.jpg"
+                alt="مارغريتا"
+                class="w-full h-full object-cover rounded-t-lg mb-4"
+              />
+              <div
+                class="card-content absolute bottom-0 w-full mx-auto z-10 py-20 opacity-0 transition-opacity hover:opacity-100"
+              >
+                <h3 class="text-2xl font-bold text-red-600 mb-2">مارغريتا</h3>
+                <p class="text-gray-700 mb-4">
+                  بيتزا تقليدية بالجبن والطماطم الطازجة.
+                </p>
+                <span class="text-xl font-semibold text-gray-800"
+                  >سعر: 90 جنيه</span
+                >
+              </div>
+            </div>
           </div>
-          <div
-            class="rounded-md col-span-3 row-span-8 bg-white p-3 shadow-md"
-            id="chicken"
+          <a
+            href="#menu-page"
+            class="bg-main text-second px-8 py-3 relative top-20 rounded-lg hover:bg-red-700 transition"
+            >اكتشف القائمة</a
           >
-            <h3 class="font-momken text-main">دجاج</h3>
-          </div>
-          <div
-            class="rounded-md col-span-3 row-span-4 bg-white p-3 shadow-md"
-            id="sides"
-          >
-            <h3 class="font-momken text-main">أطباق جانبية</h3>
-          </div>
-          <div
-            class="rounded-md col-span-3 row-span-4 bg-white p-3 shadow-md"
-            id="drinks"
-          >
-            <h3 class="font-momken text-main">مشروبات</h3>
-          </div>
-          <div
-            class="rounded-md col-span-3 sm:col-span-3 md:col-span-6 row-span-4 bg-white p-3 shadow-md"
-            id="dessert"
-          >
-            <h3 class="font-momken text-main">حلويات</h3>
-          </div>
-          <div
-            class="rounded-md col-span-3 row-span-4 bg-white p-3 shadow-md"
-            id="extras"
-          >
-            <h3 class="font-momken text-main">إضافات</h3>
-          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- review -->
-      <!-- <div>
-        <h2 class="font-momken text-5xl text-main mb-6">التقييمات</h2>
-        <div class="carousel-container">
-          <button class="prev-btn"></button>
-          <div class="carousel-truck"></div>
-          <button class="next-btn"></button>
-        </div>
-      </div> -->
-
-      <!-- join us -->
-      <div class="subscribe container font-ruqaa mx-auto py-16 text-center">
-        <h4 class="text-3xl mb-4">اشترك الان و احصل علي 10% خصم</h4>
-        <p class="text-xl mb-4">
-          كن أول من يحصل على أحدث الأخبار والعروض الترويجية والمزيد.
-        </p>
-        <div class="email-info flex items-center justify-center mb-4">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="بريدك الالكتروني"
-            class="p-4 w-80"
-          />
-          <button class="sub-btn p-4 border-0 bg-deepGreen text-second">
-            اشترك
-          </button>
-        </div>
-        <p class="text-sm">من خلال الاشتراك فإنك تقبل <a href="">سياستنا</a></p>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer class="bg-darkgray text-second font-ruqaa p-6 text-sm md:text-base">
-      <div class="about container mx-auto grid grid-cols-9 py-4 gap-12">
-        <div class="contact col-span-3">
-          <h5 class="text-main text-3xl mb-3">للتواصل</h5>
-          <p class="text-xl mb-3">
-            الخط الساخن <span class="text-main px-2">0515963636</span>
+      <!-- about Crusto -->
+      <section id="about" class="py-16 bg-main text-second">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-8 text-accentGold font-momken">
+            عن مطعم كراستو
+          </h2>
+          <p class="mb-6 text-lg">
+            في كراستو، نجلب لكم النكهات الإيطالية الأصيلة ممزوجة بلمسة عربية
+            فريدة. نقدم لكم أشهى أنواع البيتزا، التي تُعد بحب وعناية باستخدام
+            أجود المكونات الطازجة.
           </p>
-          <address>
-            ميدان التحرير، وسط القاهرة، الرقم البريدي 11511، مصر
-            <br />
-            crust-eg@gmail.com
-          </address>
-          <ul>
-            <li>
-              <a href=""><img src="Images/icons/facebook.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="Images/icons/twitterx.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="Images/icons/instagram.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="Images/icons/youtube.png" alt="" /></a>
-            </li>
-          </ul>
+          <p class="mb-4 text-lg">
+            نحن نؤمن أن الطعام هو تجربة يجب أن تُعاش، لذا نحرص على تقديم بيتزا
+            لذيذة تتميز بقوامها الرائع ونكهاتها المتنوعة.
+          </p>
+          <p class="mb-4 text-lg">
+            تعالوا وانضموا إلينا لتستمتعوا بتجربة طعام استثنائية في أجواء مريحة
+            وودودة. نعدكم بأن تكون كل لقمة من كراستو مليئة بالحب والشغف.
+          </p>
         </div>
-        <div class="open-time col-span-2">
-          <h5 class="text-main text-3xl mb-3">مواعيد العمل</h5>
-          <ul>
-            <li class="flex justify-between mb-2">
-              <span>السبت</span><span>9:00 - 20:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الاحد</span><span>9:00 - 20:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الاثنين</span><span>9:00 - 20:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الثلاثاء</span><span>9:00 - 20:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الاربعاء</span><span>9:00 - 20:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الخميس</span><span>9:00 - 22:30</span>
-            </li>
-            <li class="flex justify-between mb-2">
-              <span>الجمعة</span><span>مغلق</span>
-            </li>
-          </ul>
-        </div>
-        <div class="info col-span-1">
-          <h5 class="text-main text-3xl mb-3">عننا</h5>
-          <ul>
-            <li><a href="" class="hover:text-accentGold">من نحن</a></li>
-            <li><a href="" class="hover:text-accentGold">تعقب طلبك</a></li>
-            <li><a href="" class="hover:text-accentGold">وظائفنا</a></li>
-            <li><a href="" class="hover:text-accentGold">تواصل معنا</a></li>
-            <li><a href="" class="hover:text-accentGold">سياستنا</a></li>
-            <li><a href="" class="hover:text-accentGold">موفعنا</a></li>
-          </ul>
-        </div>
-        <div class="newsletter col-span-3">
-          <h5 class="text-main text-3xl mb-3">انضم الينا</h5>
-          <div class="flex gap-4">
-            <a href="" class="p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-facebook text-second"
+      </section>
+
+      <!-- Special Offers Section -->
+      <section id="special-offers" class="py-16 bg-second">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-8 text-main font-momken">
+            العروض الخاصة
+          </h2>
+          <p class="mb-6 text-lg text-gray-700">
+            استمتع بأفضل العروض لدينا! تحقق من العروض المحدودة المتاحة.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold text-main font-momken mb-2">
+                عرض العائلة
+              </h3>
+              <p class="mb-4">
+                احصل على 3 بيتزا كبيرة وسلطة مجانية بسعر 120 جنيه فقط!
+              </p>
+              <span class="text-xl font-semibold text-gray-800"
+                >سعر: 120 جنيه</span
               >
-                <path
-                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                />
-              </svg>
-            </a>
-            <a href="" class="p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-twitter text-second"
+            </div>
+            <!-- 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold text-main font-momken mb-2">
+                عرض الطلاب
+              </h3>
+              <p class="mb-4">
+                احصل على خصم 20% على جميع الطلبات للطلاب. قدم بطاقة الطالب.
+              </p>
+              <span class="text-xl font-semibold text-gray-800"
+                >سعر: 40 جنيه بعد الخصم</span
               >
-                <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-                />
-              </svg>
-            </a>
-            <a href="" class="p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-instagram"
+            </div>
+            <!-- 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold text-main font-momken mb-2">
+                عرض منتصف الأسبوع
+              </h3>
+              <p class="mb-4">
+                اشترِ بيتزا واحصل على الثانية بنصف السعر كل يوم ثلاثاء!
+              </p>
+              <span class="text-xl font-semibold text-gray-800"
+                >سعر: 50 جنيه</span
               >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-              </svg>
-            </a>
-            <a href="" class="p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-youtube"
+            </div>
+            <!-- 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold text-main font-momken mb-2">
+                عرض الدابل
+              </h3>
+              <p class="mb-4">اشترِ بيتزتين واحصل على مشروب مجاني!</p>
+              <span class="text-xl font-semibold text-gray-800"
+                >سعر: 90 جنيه</span
               >
-                <path
-                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                />
-                <path d="m10 15 5-3-5-3z" />
-              </svg>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="foot text-center text-sm">
-        <p>&copy;كراستو ۲۰۲٤، بواسطة احمد عمران. جميع الحقوق محفوظة.</p>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-16 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-semibold font-momken text-main mb-6">
+            تواصل معنا
+          </h2>
+          <p class="mb-4">لأي استفسارات أو حجوزات، لا تتردد في الاتصال بنا!</p>
+          <p class="mb-4">الهاتف: 0123456789</p>
+          <p class="mb-4">البريد الإلكتروني: contact@crusto.com</p>
+        </div>
+        <div class="subscribe container mx-auto py-16 text-center">
+          <h4 class="text-3xl mb-4 text-main font-momken">
+            اشترك الان و احصل علي 20% خصم
+          </h4>
+          <p class="mb-4">
+            كن أول من يحصل على أحدث الأخبار <br />والعروض الترويجية والمزيد.
+          </p>
+          <div class="email-info flex items-center justify-center mb-4">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="بريدك الالكتروني"
+              class="p-4 w-80"
+            />
+            <button class="sub-btn p-4 border-0 bg-main text-second">
+              اشترك
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; ۲۰۲٤ مطعم كراستو. جميع الحقوق محفوظة.</p>
       </div>
     </footer>
 
@@ -694,6 +522,8 @@
         </div>
       </div>
     </div>
+
+    <!-- JavaScript Code -->
     <script src="Js/script.js"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ module.exports = {
         second: "#efe3bc",
         // creamWhite: "#FAFAFA",
         // cream: "#F5F5F5",
-        darkgray: "#212121",
+        darkgray: "#333",
         accentGold: "#FFC107",
         deepGreen: "#388E3C",
       },

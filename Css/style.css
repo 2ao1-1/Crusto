@@ -27,21 +27,49 @@
   font-weight: normal;
   font-style: normal;
 }
-.card {
-  width: 225px;
+
+#mobile-menu {
+  z-index: -1;
+  left: 0;
+  padding: 6px 15px;
+  transform: translateY(130px);
+  transition: transform 1s ease-in-out;
 }
-.heart-btn {
-  color: #efe3bc;
+nav {
+  height: 645px;
+  overflow: hidden;
 }
-.heart-btn:focus,
-.heart-btn:hover,
-.cart:focus,
-.cart:hover {
-  color: #c11f24;
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #c11f24b5;
 }
-h1 {
-  cursor: default;
+.hero-main-page {
+  overflow: hidden;
+  position: relative;
+  top: -79px;
+  margin: 0px auto;
+  height: 660px;
 }
+.hero-content {
+  background: rgba(0 0 0 / 50%);
+  height: 660px;
+  padding: 250px 15px 150px;
+}
+video {
+  width: 100%;
+  object-fit: cover;
+  height: 900px;
+  top: -70px;
+}
+
+/*  */
 .card-content {
-  margin-bottom: 70px;
+  background: #eee2bbd6;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
