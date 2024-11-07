@@ -35,20 +35,22 @@
   transform: translateY(130px);
   transition: transform 1s ease-in-out;
 }
-nav {
-  height: 645px;
-  overflow: hidden;
+header {
+  height: 660px;
 }
-.nav-bar {
-  position: sticky;
-  top: 0;
+.nav_bar {
   z-index: 100;
+  width: 100%;
   background: #c11f24b5;
+}
+.sticky {
+  position: fixed;
+  background: #c11f24;
 }
 .hero-main-page {
   overflow: hidden;
   position: relative;
-  top: -79px;
+  top: -64px;
   margin: 0px auto;
   height: 660px;
 }
@@ -72,4 +74,22 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.btn {
+  transition: all 0.3s;
+}
+#menu {
+  transition: transform 1s, opacity 1s;
+}
+
+.section {
+  padding: 15rem 3rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }

@@ -527,3 +527,63 @@ closeUpBtn.addEventListener("click", function () {
 //   revCard.innerHTML = `hi${rev.price}`;
 //   review.appendChild(revCard);
 // });
+
+////////////////////////////////////////////
+const scrollToMenu = document.querySelector(".btn--scroll-to");
+const menu = document.querySelector("#section--2");
+scrollToMenu.addEventListener("click", function (e) {
+  menu.scrollIntoView({ behavior: "smooth" });
+});
+
+// Navigations
+document.querySelector("#nav__links").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains("nav__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+////////////////////////////////////////////////////
+// Sticky Navigation
+const header = document.querySelector("header");
+const nav = document.querySelector(".nav_bar");
+const navHeight = nav.getBoundingClientRect().height;
+// console.log(navHeight);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  // console.log(entry);
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
+
+/////////////////////////////////////////////////////////
+// Reveal sections
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
